@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    padding-top: 3vw;
+    max-width: 100%;
+    margin: auto;
+}
+
+.header img{
+    width: 9vw;
+    padding-left: 2.5vw;
+}
+
+.header .nav{
+    padding-right: 4vw;
+}
+.nav a {
+    margin: 0 1.5vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: black;
+    position: relative;
+}
+.nav a::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -4px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+  }
+  
+  .nav a:hover:before {
+    transform: scaleX(1);
+  }
+
+.button_bar{
+    display: flex;
+    padding-left: 3.5vw;
+}
+.button_bar p{
+    margin: 0;
+}
+.button_bar a{
+    margin: 0 0.6vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    color: #696969;
+}
+.button_bar a:nth-child(5){
+    color: black;
+}
+.main {
+    max-width: 61vw;
+    margin: 3vw auto;
+    margin-bottom: 0vw;
+}
+.main h2 {
+    font-size: 3.5vw;
+    margin-top: 2vw;
+}
+.main p {
+    color: black;
+    font-size: 1.2vw;
+    margin: 2vw 0;
+    line-height: 2vw;
+}
+.button {
+    display: inline-block;
+    padding: 0.7vw 1.5vw;
+    background-color: #EB4C49;
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+.illustration{
+    margin-top: 2vw;
+}
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    position: absolute;
+    top: 55vw;
+    left: 13.5vw;
+    display: flex;
+    justify-content: center;
+    width: 73vw;
+    padding: 1vw;
+    gap: 1.7vw;
+    border-radius: 1vw;
+    background-color: white;
+}
+.box {
+    flex: 1;
+    padding: 1vw;
+    border-radius: 1vw;
+    text-align: left;
+}
+.light-box {
+    background-color: white;
+}
+.dark-box {
+    background-color: #333;
+    color: white;
+}
+.box h2 {
+    width: 21vw;
+    font-size: 1.8vw;
+    margin: 0;
+    margin-left: 2vw;
+}
+.container .dark-box h2{
+    width: 23vw;
+
+}
+.box p {
+    width: 30vw;
+    font-size: 1.1vw;
+    line-height: 2vw;
+    color: inherit;
+    margin-left: 2vw;
+}
+.light-box a {
+    color: blue;
+    text-decoration: none;
+}
+
+.section-1{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0067FF;
+
+}
+.section-1 h2{
+    color: white;
+    font-size: 3vw;
+    margin: 0;
+    padding-top: 27vw;
+}
+.cards-container {
+    padding-top: 3vw;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1.5vw;
+}
+
+.card {
+    background: white;
+    color: black;
+    width: 17vw;
+    padding: 3vw 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card img {
+    width: 5vw;
+    height: 5vw;
+    padding-bottom: 1.5vw;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 2vw;
+    padding-left: 1vw;
+}
+
+.section-1 .card p {
+    width: 15vw;
+    margin: 0;
+    padding-left: 1vw;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+    color: #333;
+}
+.section-1 h4{
+    padding-top: 4vw;
+    color: white;
+    font-size: 1.8vw;
+}
+.section-2 h2{
+    font-size: 1.8vw;
+    position: relative;
+}
+.section-2 h2::before{
+    content: "";
+    width: 5vw;
+    height: 0.2vw;
+    background-color: #0067FF;
+    top: 2.8vw;
+    left: 47.5vw;
+    position: absolute;
+}
+.text-content h1{
+    font-size: 3.3vw;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 3vw;
+}
+.text-content p{
+    font-size: 1.1vw;
+    width: 56.5vw;
+    margin: 0 auto;
+    padding-top: 2vw;
+    line-height: 1.6;
+}
+
+.text-content img{
+    margin-top: 2vw;
+    padding-bottom: 4vw;
+    width: 70vw;
+}
+.section-3{
+    background-color: #F0F7FF;
+    padding: 2vw;
+}
+.section-3 h2{
+    margin-top: 2vw;
+    padding-top: 2vw;
+    font-size: 2vw;
+}
+.section-3 .box_contenar{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.section-3 .box_contenar .box img{
+    width: 15vw;
+    border-radius: 2vw;
+}
+.section-3 .box_contenar .box h2{
+    font-size: 1vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 1vw;
+    width: 15vw;
+}
